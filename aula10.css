@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btnnav {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10%;
+    margin: 0 5px;
+    height: 35px;
+    width: 140px;
+    color: rgb(255, 215, 0);
+    border: 2px solid rgb(255, 215, 0);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.btnnav:hover {
+    background-color: rgb(255, 215, 0);
+    color: rgb(0, 0, 0);
+}
+
+.btnfooter {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 215, 0);
+    color: rgb(255, 215, 0);
+    padding: 12px 18px;
+    margin: 10px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btnfooter:hover {
+    background-color: rgb(255, 215, 0);
+    color: rgb(0, 0, 0);
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+    border: 3px solid rgb(255, 215, 0);
+    max-width: 400px;
+}
+
+.card h4 {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(255, 215, 0);
+    padding-bottom: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card img {
+    margin: 15px 0;
+    border-radius: 5px;
+    max-height: 280px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    color: rgb(255, 215, 0);
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+
+/* Mobile - até 600px */
+@media (max-width: 600px) {
+    header {
+        height: 15vh !important;
+    }
+
+    h1 {
+        font-size: 20px !important;
+    }
+
+    .btnnav {
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+        margin: 2px;
+    }
+
+    main {
+        height: auto !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 10px !important;
+    }
+
+    div[style*="width: 45%"] {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 300px;
+    }
+
+    .card {
+        max-width: 100%;
+        max-height: 350px;
+    }
+
+    .card h4 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .card img {
+        max-height: 150px;
+        width: 150px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .btnfooter {
+        padding: 8px 12px;
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    footer {
+        height: auto !important;
+        min-height: 15vh;
+    }
+}
+
+/* Tablet - 601px até 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        height: 12vh !important;
+    }
+
+    h1 {
+        font-size: 26px !important;
+    }
+
+    .btnnav {
+        width: 120px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+    main {
+        height: auto !important;
+        gap: 30px !important;
+        padding: 15px !important;
+    }
+
+    div[style*="width: 45%"] {
+        width: 48% !important;
+    }
+
+    .card {
+        max-width: 350px;
+    }
+
+    .card h4 {
+        font-size: 26px;
+    }
+
+    .card img {
+        max-height: 200px;
+        width: 200px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    footer {
+        height: 18vh !important;
+    }
+}
+
+/* Desktop - acima de 1025px */
+@media (min-width: 1025px) {
+    header {
+        height: 10vh;
+    }
+
+    main {
+        height: 70vh;
+        gap: 40px;
+    }
+
+    div[style*="width: 45%"] {
+        width: 45%;
+    }
+
+    .card {
+        max-width: 400px;
+        max-height: 500px;
+    }
+
+    footer {
+        height: 20vh;
+    }
+}
+
+button {
+    width: 100% !important;
+    height: 40px !important;
+}
