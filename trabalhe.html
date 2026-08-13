@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla - Trabalhe Conosco</title>
+    <link rel="stylesheet" href="aula10.css">
+</head>
+
+<body>
+    <header style="background-color: rgb(0, 0, 0); height: 10vh; border-bottom: 3px solid rgb(255, 215, 0); display: flex; align-items: center; justify-content: center;">
+        <nav style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 20px; height: 100%; gap: 8px;">
+            <h1 style="color: rgb(255, 215, 0); font-size: 32px; margin: 0; letter-spacing: 3px;">TESLA</h1>
+            <div style="display: flex; gap: 15px; justify-content: center;">
+                <a href="index.html"><button class='btnnav'>Home</button></a>
+                <a href="sobre.html"><button class='btnnav'>Sobre Nós</button></a>
+                <a href="trabalhe.html"><button class='btnnav'>Trabalhe conosco</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main style="background-color: rgb(20, 20, 20); min-height: 70vh; display: flex; justify-content: center; align-items: center; padding: 40px 20px;">
+        <section style="width: 100%; max-width: 500px; background-color: rgb(30, 30, 30); border: 1px solid rgb(255, 215, 0); border-radius: 8px; padding: 30px; color: #fff;">
+            <h2 style="color: rgb(255, 215, 0); text-align: center; margin-top: 0;">Faça Parte da Equipe</h2>
+            <p style="text-align: center; color: #ccc; font-size: 14px; margin-bottom: 25px;">Preencha os dados abaixo para enviar seu currículo.</p>
+
+            <form style="display: flex; flex-direction: column; gap: 15px;">
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="nome" style="color: rgb(255, 215, 0); font-size: 14px;">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required style="padding: 10px; background-color: #111; border: 1px solid #444; color: #fff; border-radius: 4px;">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="email" style="color: rgb(255, 215, 0); font-size: 14px;">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required style="padding: 10px; background-color: #111; border: 1px solid #444; color: #fff; border-radius: 4px;">
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="area" style="color: rgb(255, 215, 0); font-size: 14px;">Área de Interesse:</label>
+                    <select id="area" name="area" style="padding: 10px; background-color: #111; border: 1px solid #444; color: #fff; border-radius: 4px;">
+                        <option value="engenharia">Engenharia Robótica</option>
+                        <option value="desenvolvimento">Desenvolvimento de Software</option>
+                        <option value="design">Design / UI / UX</option>
+                        <option value="vendas">Vendas e Marketing</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="mensagem" style="color: rgb(255, 215, 0); font-size: 14px;">Mensagem / Resumo:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Fale um pouco sobre você..." style="padding: 10px; background-color: #111; border: 1px solid #444; color: #fff; border-radius: 4px; resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" class="btnnav" style="margin-top: 10px; cursor: pointer; padding: 12px; font-weight: bold;">Enviar Candidatura</button>
+            </form>
+        </section>
+    </main>
+
+    <footer style="background-color: rgb(0, 0, 0); height: 20vh; border-top: 3px solid rgb(255, 215, 0); display: flex; align-items: center; justify-content: center;">
+        <nav style="display: flex; justify-content: center; align-items: center; gap: 20px; height: 100%; flex-wrap: wrap;">
+            <a href="https://www.facebook.com" target="_blank"> 
+                <button class="btnfooter"> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="height: 30px;"> Facebook 
+                </button> 
+            </a>
+            <a href="https://www.instagram.com" target="_blank"> 
+                <button class="btnfooter"> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="height: 30px;"> Instagram 
+                </button> 
+            </a>
+            <a href="https://www.twitter.com" target="_blank"> 
+                <button class="btnfooter"> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="height: 30px;"> Twitter 
+                </button> 
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
