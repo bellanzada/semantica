@@ -23,34 +23,28 @@
     <main style="background-color: rgb(20, 20, 20); min-height: 70vh; display: flex; justify-content: center; align-items: center; padding: 40px 20px;">
         <section style="width: 100%; max-width: 500px; background-color: rgb(30, 30, 30); border: 1px solid rgb(255, 215, 0); border-radius: 8px; padding: 30px; color: #fff;">
             <h2 style="color: rgb(255, 215, 0); text-align: center; margin-top: 0;">Faça Parte da Equipe</h2>
-            <p style="text-align: center; color: #ccc; font-size: 14px; margin-bottom: 25px;">Preencha os dados abaixo para enviar seu currículo.</p>
+            <p style="text-align: center; color: #ccc; font-size: 14px; margin-bottom: 25px;">Preencha os dados abaixo para enviar sua candidatura.</p>
 
             <form style="display: flex; flex-direction: column; gap: 15px;">
+                
                 <div style="display: flex; flex-direction: column; gap: 5px;">
                     <label for="nome" style="color: rgb(255, 215, 0); font-size: 14px;">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required style="padding: 10px; background-color: #111; border: 1px solid #444; color: #fff; border-radius: 4px;">
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required style="padding: 10px; background-color: #111; border: 1px solid #444; color: #fff; border-radius: 4px;">
                 </div>
 
+                
                 <div style="display: flex; flex-direction: column; gap: 5px;">
-                    <label for="email" style="color: rgb(255, 215, 0); font-size: 14px;">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required style="padding: 10px; background-color: #111; border: 1px solid #444; color: #fff; border-radius: 4px;">
+                    <label for="cargo" style="color: rgb(255, 215, 0); font-size: 14px;">Cargo Desejado:</label>
+                    <input type="text" id="cargo" name="cargo" placeholder="Ex: Engenheiro de Software, Designer UI/UX" required style="padding: 10px; background-color: #111; border: 1px solid #444; color: #fff; border-radius: 4px;">
                 </div>
 
+                <!-- Campo Pretensão Salarial -->
                 <div style="display: flex; flex-direction: column; gap: 5px;">
-                    <label for="area" style="color: rgb(255, 215, 0); font-size: 14px;">Área de Interesse:</label>
-                    <select id="area" name="area" style="padding: 10px; background-color: #111; border: 1px solid #444; color: #fff; border-radius: 4px;">
-                        <option value="engenharia">Engenharia Robótica</option>
-                        <option value="desenvolvimento">Desenvolvimento de Software</option>
-                        <option value="design">Design / UI / UX</option>
-                        <option value="vendas">Vendas e Marketing</option>
-                    </select>
+                    <label for="pretensao" style="color: rgb(255, 215, 0); font-size: 14px;">Pretensão Salarial (R$):</label>
+                    <input type="number" id="pretensao" name="pretensao" step="0.01" min="0" placeholder="Ex: 5000.00" required style="padding: 10px; background-color: #111; border: 1px solid #444; color: #fff; border-radius: 4px;">
                 </div>
 
-                <div style="display: flex; flex-direction: column; gap: 5px;">
-                    <label for="mensagem" style="color: rgb(255, 215, 0); font-size: 14px;">Mensagem / Resumo:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Fale um pouco sobre você..." style="padding: 10px; background-color: #111; border: 1px solid #444; color: #fff; border-radius: 4px; resize: vertical;"></textarea>
-                </div>
-
+                
                 <button type="submit" class="btnnav" style="margin-top: 10px; cursor: pointer; padding: 12px; font-weight: bold;">Enviar Candidatura</button>
             </form>
         </section>

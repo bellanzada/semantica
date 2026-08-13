@@ -20,8 +20,10 @@
         </nav>
     </header>
 
-    <main style="background-color: rgb(20, 20, 20); min-height: 70vh; display: flex; justify-content: center; align-items: center; padding: 40px 20px;">
-        <section style="max-width: 800px; background-color: rgb(30, 30, 30); border: 1px solid rgb(255, 215, 0); border-radius: 8px; padding: 30px; color: #fff; text-align: center;">
+    <main style="background-color: rgb(20, 20, 20); min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px 20px; gap: 30px;">
+        
+        <!-- Seção Sobre Nós -->
+        <section style="max-width: 800px; width: 100%; background-color: rgb(30, 30, 30); border: 1px solid rgb(255, 215, 0); border-radius: 8px; padding: 30px; color: #fff; text-align: center; box-sizing: border-box;">
             <h2 style="color: rgb(255, 215, 0); margin-top: 0;">Nossa História</h2>
             <p style="line-height: 1.6; color: #ccc;">
                 A TESLA é líder em inovação e tecnologia de ponta no ecossistema cibernético. Nossa missão é moldar o futuro através de engenharia avançada, conectando tecnologia e performance em escala global.
@@ -44,6 +46,23 @@
                 </div>
             </div>
         </section>
+
+        <!-- Seção do Localização (Mapa) -->
+        <section style="max-width: 800px; width: 100%; background-color: rgb(30, 30, 30); border: 1px solid rgb(255, 215, 0); border-radius: 8px; padding: 20px; color: #fff; text-align: center; box-sizing: border-box;">
+            <h3 style="color: rgb(255, 215, 0); margin-top: 0; margin-bottom: 15px;">Nossa Localização</h3>
+            <div style="width: 100%; overflow: hidden; border-radius: 6px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1888248.9384386018!2d-48.00015654240095!3d-22.429544928978434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c877da1910f2e3%3A0x55f2108757a07517!2sTesla%20Brasil%20Ltda.!5e0!3m2!1spt-BR!2sbr!4v1786643994895!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="350" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </section>
+
     </main>
 
     <footer style="background-color: rgb(0, 0, 0); height: 20vh; border-top: 3px solid rgb(255, 215, 0); display: flex; align-items: center; justify-content: center;">
